@@ -22,7 +22,6 @@
 	<div class="row">
 		<div class="col-md-12">
 		<p><?php the_content(); ?>	</p>
-		<blockquote><?php the_excerpt(); ?></blockquote>
 		<p class="top-buffer space-below">
 			<?php
 			$posttags = get_the_tags();

@@ -27,7 +27,7 @@
 			
 			
 	?>
-		<div class="<?php _e($col_class);?>" style="background-image:url(<?php echo $image?>);">
+		<div class="<?php _e($col_class);?> overlay" style="background-image:url(<?php echo $image?>);">
 			<div class="card col-md-12">
 				<h4 class="card-title">
 					<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">

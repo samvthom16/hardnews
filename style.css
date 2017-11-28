@@ -31,9 +31,19 @@ a{
 	color: inherit;
 	line-height: normal;
 }
-a:hover{
+a:hover,a:focus{
 	text-decoration: none;
+	color: inherit;
 }
+.affix {
+      top: 0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
 .nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
 	background: none;
 }
@@ -104,7 +114,6 @@ nav.navbar{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.54);
 	border-radius: 0;
 }
-
 .navbar-collapse li a{	
     padding: 10px 5px 5px;
     font-weight: bold;
@@ -249,6 +258,10 @@ footer{
     max-height: none;
     position: relative;
 }
+.overlay{
+box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+}	
+	
 
 .card-title {
 /*    font-size: 1.28571429em;*/
@@ -298,10 +311,10 @@ footer{
 .media-body, .line-ht-in,.card-text{
 	line-height: initial;
 }
-.navbar-fixed-top .collapse,.navbar-fixed-top .navbar,.navbar-fixed-top  .line:before,.navbar-fixed-top .navbar-brand-big{
+.affix form,.affix .navbar,.affix  .line:before,.affix .navbar-brand-big{
 	display: none !important;
 }
-.navbar-fixed-top .navbar.hidden,.navbar-fixed-top .navbar-brand, .navbar-fixed-top .navbar-right .hidden{
+.affix .navbar.hidden,.affix .navbar-brand, .affix .navbar-right .hidden{
 	display:inline-block !important;
 }
 
@@ -387,7 +400,7 @@ blockquote{
 	  width: 100%;
 	  margin-top: 5px;
   }
-  .navbar-fixed-top {
+  .affix {
       top: 0;
       border-width: 0 0 1px;
   }
@@ -442,7 +455,7 @@ footer .social {
 }
 	
 @media (max-width: 600px){
-	.navbar-fixed-top .navbar-form{
+	.affix .navbar-form{
 		display: none;
 	}
 }

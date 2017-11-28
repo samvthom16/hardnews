@@ -7,8 +7,8 @@
 <title><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></title>
 <?php wp_head();?>
 </head>
-<body <?php body_class(); ?> data-spy="scroll" data-target=".navbar-fixed-top" data-offset="70">
-<nav class="navbar navbar-default no-border">
+<body <?php body_class(); ?> >
+<nav class="navbar navbar-default no-border" data-spy="affix" data-offset-top="90">
   <div class="container-fluid line"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">

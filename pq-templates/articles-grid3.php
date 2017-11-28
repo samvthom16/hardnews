@@ -1,5 +1,5 @@
 <div class="container">
-	<section class="col-md-12 clearfix">
+	<section class="col-md-12 clearfix bottom-buffer">
 		<div class="posts"><span class="white-bg text-uppercase red-text"><strong><?php _e($atts['title']);?></strong></span></div>	
 		<div id="<?php _e( $atts['id'] );?>" data-target="<?php _e('#'.$atts['id'].' .row');?>" data-url="<?php _e( $atts['url'] );?>">	
 		<?php 
@@ -13,7 +13,7 @@
 				} 
 				
 				if( $i % 3 == 1){
-					echo "<div class='row'>";
+					echo "<div class='row cardo'>";
 				}
 				
 		?>
