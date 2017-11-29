@@ -332,7 +332,6 @@ blockquote{
    left: 0;
    position: fixed;
    top: 200px;
-   z-index: -1;
 }
 
 .fixed-socials ul{
