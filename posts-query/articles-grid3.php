@@ -1,5 +1,5 @@
 <div class="container">
-	<section class="col-md-12 clearfix bottom-buffer">
+	<section class="col-md-12 clearfix">
 		<div class="posts"><span class="white-bg text-uppercase red-text"><strong><?php _e($atts['title']);?></strong></span></div>	
 		<div id="<?php _e( $atts['id'] );?>" data-target="<?php _e('#'.$atts['id'].' .row');?>" data-url="<?php _e( $atts['url'] );?>">	
 		<?php 
@@ -18,13 +18,11 @@
 				
 		?>
 		
-			<div class="col-sm-4 posts-query-article">
+			<div class="col-sm-4 posts-query-article bottom-buffer">
 				<div class="card">
-					<div class="card-img" style="background-image:url(<?php echo $image?>);">
-						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"></a>
-					</div>
+						<a href="<?php the_permalink(); ?>" class="card-img" style="background-image:url(<?php echo $image?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
 					<div class="card-block">
-						<h4 class="card-title red-text"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+						<h4 class="card-title red-text"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 						<div class="card-text"><?php the_excerpt(); ?></div>
 						<div class="media">
 							<div class="media-left">

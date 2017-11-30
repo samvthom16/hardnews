@@ -16,8 +16,9 @@
 		$image = $image[0];
 	} ?>
 				<?php if(  $the_query->current_post == 0 && !is_paged() ) : ?>
-			<div class="col-md-8 card-img white-text single-post-img row-eq-height bottom-buffer" style="background-image:linear-gradient(rgba(150, 150, 150, 0.5), rgba(0, 0, 0, 0.5)),url(<?php echo $image?>);">
-                <div class="card col-md-10">
+			<div class="col-md-8 white-text bottom-buffer">
+			<a href="" class="overlay single-post-img card-img" style="background-image: url(<?php echo $image?>);"></a>
+                <div class="card col-md-10 carousel-caption">
                         <h3 class="card-title "><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 						<div class="card-text"><?php the_excerpt(); ?></div>
 						<div class="media bottom-buffer">
@@ -27,24 +28,20 @@
 							</a>
 						  </div>
 						  <div class="media-body small text-left">
-							<a href=""><strong class="media-heading">Hardnews Magazine</strong></a>
+							<a href=""><strong class="media-heading"><?php the_author();?></strong></a>
 							<div><?php echo get_the_date( 'M d' ); ?></div>
 						  </div>
 						</div>
                 </div>
 				</div>	
-        <?php elseif ( $i <=6 ) : ?>
-				<div class="col-md-4 bottom-buffer">	
-							<div class="col-md-12">
-							<h4 class="center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
-							<div class="red-text"><?php the_author_posts_link(); ?></div>
-						  </div>
-				</div>				
 
 			<?php endif; ?>
 			
 				<?php endwhile; ?>
 			<?php endif; ?>
+			<div class="col-md-4 top-border">
+		<?php echo do_shortcode("[posts-query category_name='Neighbourhood' style=grid1 posts_per_page=6 offset=1]"); ?>		
+			</div>
 			</div>
 			</div>
 <?php echo do_shortcode("[posts-query category_name='Neighbourhood' style=grid93 posts_per_page=2 offset=7]"); ?>

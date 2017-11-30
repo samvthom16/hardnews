@@ -20,12 +20,5 @@ $('.main-content img').each(function() {
 	else
     $(this).css('float','left');
 });
-// scroll body to 0px on click
-		$('.navbar-header').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 800);
-			return false;
-		});
 });
 

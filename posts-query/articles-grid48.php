@@ -15,20 +15,20 @@
 		?>
 		<?php if($i % 2 == 0):?> 
 		<div class="col-sm-4 bottom-buffer">
-                <div class="card col-md-12 card-img row-eq-height overlay" style="background-image:url(<?php echo $image?>);">
-                    <div class="card-block col-md-12 no-border bottom-buffer">
-                        <h4 class="card-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
+                <div class="card">
+					<a href="<?php the_permalink(); ?>" class="card-img overlay" style="background-image:url(<?php echo $image?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
+                    <div class="card-block">
+                        <h4 class="col-md-12 card-title carousel-caption"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
                         
                     </div>
                 </div>
             </div>
 			<?php else :?>
 		    <div class="col-sm-8 bottom-buffer">
-                <div class="card col-md-12 card-img row-eq-height overlay" style="background-image:url(<?php echo $image?>);">
-                    <div class="card-block no-border col-md-12 bottom-buffer">
-                         <div class="card-text">
-                            <?php the_excerpt(); ?>
-                        </div>                        
+                <div class="card">
+					<a href="<?php the_permalink(); ?>" class="card-img overlay" style="background-image:url(<?php echo $image?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
+                    <div class="card-block">
+                        <h4 class="col-md-12 card-title carousel-caption"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>                       
                     </div>
                 </div>
             </div>

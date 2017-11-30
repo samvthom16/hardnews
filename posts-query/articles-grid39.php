@@ -23,18 +23,20 @@
 				$image = '';
 			}			
 			
-			if( $i % 2 == 0 ){ echo "<!-- start of row --><div class='row row-eq-height'>"; } 
+			if( $i % 2 == 0 ){ echo "<!-- start of row --><div class='row'>"; } 
 			
 			
 	?>
-		<div class="<?php _e($col_class);?> overlay" style="background-image:url(<?php echo $image?>);">
-			<div class="card col-md-12">
-				<h4 class="card-title">
+			<div class="card no-gutter <?php _e($col_class);?>">
+				<a href="<?php the_permalink(); ?>" class="card-img overlay " style="background-image:url(<?php echo $image?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
+		
+				<div class="carousel-caption">
+				<h4 class="card-title col-md-12">
 					<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 						<?php the_title(); ?>
 					</a>
 				</h4>
-				<div class="media bottom-buffer">
+				<div class="media col-md-12">
 					<div class="media-left">
 						<a href="#">
 							<img class="media-object" src="<?php bloginfo('template_directory'); ?>/images/logo_small.png" alt="">
@@ -45,9 +47,8 @@
 						<div><?php echo get_the_date( 'M d' ); ?></div>
 					</div>
 				</div>
-			</div>
-		</div>
-	
+				</div>
+			</div>	
 		<?php 
 				if( $i % 2 == 1 || $i == $this->query->post_count - 1  ){ echo "</div><!-- end of row -->"; $row_i++; } 
 				$i++;
