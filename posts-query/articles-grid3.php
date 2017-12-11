@@ -1,6 +1,8 @@
 <div class="container">
 	<section class="col-md-12 clearfix">
+		<?php if( $atts['title'] ):?>
 		<div class="posts"><span class="white-bg text-uppercase red-text"><strong><?php _e($atts['title']);?></strong></span></div>	
+		<?php endif;?>
 		<div id="<?php _e( $atts['id'] );?>" data-target="<?php _e('#'.$atts['id'].' .row');?>" data-url="<?php _e( $atts['url'] );?>">	
 		<?php 
 			$i = 1;
