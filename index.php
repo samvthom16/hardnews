@@ -27,6 +27,7 @@
 		?>
 		
 		</div>
+		<?php the_pq_pagination( $atts );?>
 	</section>
 </div>
 <?php get_footer();?>

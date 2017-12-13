@@ -54,5 +54,6 @@
 				$i++;
 			endwhile;
 		?>		
+		<?php the_pq_pagination( $atts );?>
 	</section>
 </div>
