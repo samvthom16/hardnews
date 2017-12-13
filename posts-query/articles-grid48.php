@@ -32,11 +32,10 @@
                     </div>
                 </div>
             </div>
-			<?php endif; ?>
-		<?php
+			<?php endif;
 			$i++;
 			endwhile; 
-		?>
+			?>
 		</div>
 		</div>
 		<?php the_pq_pagination( $atts );?>
