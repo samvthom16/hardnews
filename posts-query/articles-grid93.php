@@ -20,12 +20,12 @@
 						<div class="card-text col-md-12"><?php the_excerpt(); ?></div>
 						<div class="media col-md-12">
 						  <div class="media-left">
-							<a href="#">
+							<a href="<?php bloginfo('url');?>">
 							   <img class="media-object" src="<?php bloginfo('template_directory'); ?>/images/logo_small.png" alt="">
 							</a>
 						  </div>
 						  <div class="media-body small text-left">
-							<a href=""><strong class="media-heading"><?php the_author();?></strong></a>
+							<strong class="media-heading"><?php the_author_posts_link(); ?></strong>
 							<div><?php echo get_the_date( 'M d' ); ?></div>
 						  </div>
 					</div>
@@ -39,12 +39,12 @@
 						<div class="card-text col-md-12"><?php the_excerpt(); ?></div>
 						<div class="media col-md-12">
 						  <div class="media-left">
-							<a href="#">
+							<a href="<?php bloginfo('url');?>">
 							   <img class="media-object" src="<?php bloginfo('template_directory'); ?>/images/logo_small.png" alt="">
 							</a>
 						  </div>
 						  <div class="media-body small text-left">
-							<a href=""><strong class="media-heading"><?php the_author();?></strong></a>
+							<strong class="media-heading"><?php the_author_posts_link(); ?></strong>
 							<div><?php echo get_the_date( 'M d' ); ?></div>
 						  </div>
 						</div>
