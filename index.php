@@ -3,6 +3,20 @@
 <?php 
 	
 	$title = '';
+	
+	if( is_author() ){
+		$title = get_the_author();
+	}
+	
+	if( is_search() ){
+		$title = "Search for : ". get_query_var('s');
+	}
+	
+	if( is_tag() ){
+		$title = single_cat_title( '', false );
+	}
+	
+	
 ?>
 
 <div class="container" style="margin-top:40px">
