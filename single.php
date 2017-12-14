@@ -36,11 +36,11 @@
 			<h4 class="red-text text-uppercase top-buffer"><strong>Tweet this</strong></h4>
 			<div class="col-md-5 bottom-buffer no-gutter">
 				<?php the_excerpt(); ?>
-				<a href=""><i class="fa fa-twitter fa-outline blue-text"></i></a>
+				<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa fa-twitter fa-outline blue-text"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 			<div class="col-md-offset-1 col-md-5 bottom-buffer no-gutter">
-				<?php the_excerpt(); ?>
-				<a href=""><i class="fa fa-twitter fa-outline blue-text"></i></a>
+				<?php the_excerpt(); ?>				
+				<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa fa-twitter fa-outline blue-text"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</div>
 		</div>	
