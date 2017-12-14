@@ -8,6 +8,7 @@
 <?php wp_head();?>
 </head>
 <body <?php body_class(); ?> >
+<div id="fb-root"></div>
 <nav class="navbar navbar-default no-border" data-spy="affix" data-offset-top="90">
   <div class="container-fluid line"> 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -21,9 +22,9 @@
         <form class="navbar-form clearfix" role="search">       
 				<div class="pull-right social red-text">
 					<span class="social-icons">
-						<a href=""><i class="fa fa-facebook fa-outline"></i></a>
-						<a href=""><i class="fa fa-twitter fa-outline"></i></a>
-						<a href=""><i class="fa fa-whatsapp"></i></a> 
+						<a href="https://www.facebook.com/HNFP.IN/"><i class="fa fa-facebook fa-outline"></i></a>
+						<a href="https://twitter.com/hnfp_in"><i class="fa fa-twitter fa-outline"></i></a>
+						<a href="whatsapp://send?text=<?php bloginfo('url');?>" data-action="share/whatsapp/share"><i class="fa fa-whatsapp"></i></a> 
 						<a href=""><i class="fa fa-bell-o"></i></a> 
 					</span>
 					<a href=""><i class="fa fa-search"></i></a>

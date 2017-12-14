@@ -19,9 +19,7 @@
 		
 			<div class="col-sm-6 posts-query-article bottom-buffer">
 				<div class="card">
-					<div class="card-img" style="background-image:url(<?php echo $image?>);">
-						<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"></a>
-					</div>
+					<a href="<?php the_permalink(); ?>" class="card-img" style="background-image:url(<?php echo $image?>);" rel="bookmark" title="<?php the_title_attribute(); ?>"></a>
 					<div class="card-block">
 						<h4 class="card-title red-text"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 						<div class="card-text"><?php the_excerpt(); ?></div>

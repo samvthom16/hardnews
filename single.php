@@ -50,9 +50,16 @@
 
 <aside class="fixed-socials">
 		<ul>
-			<li><a href="#"><i class="fa fa-facebook fa-outline red-text-outline"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter fa-outline red-text-outline"></i></a></li>
-			<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+			<li>			
+				<div data-href="<?php echo get_permalink($post->ID); ?>" data-layout="button" data-size="small" data-mobile-iframe="true">
+					<a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink($post->ID)); ?>"><i class="fa fa-facebook fa-outline red-text-outline"></i></a>
+				</div>
+			</li>
+			<li>
+				<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa fa-twitter fa-outline red-text-outline"></i></a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</li>
+			<li><a href="whatsapp://send?text=<?php echo urlencode(get_permalink($post->ID)); ?>" data-action="share/whatsapp/share"><i class="fa fa-whatsapp"></i></a></li>
 			<li><a href="#"><i class="fa fa-bell-o"></i></a></li>
 		</ul>
 	</aside>
