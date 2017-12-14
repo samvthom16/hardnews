@@ -1,9 +1,8 @@
 <div id="myCarousel" class="carousel slide " data-ride="carousel">
 	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li> 
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<?php for($i = 0; $i< $this->query->post_count; $i++): ?>
+		<li data-target="#myCarousel" data-slide-to="<?php _e( $i );?>" <?php if( $i == 0):?>class="active"<?php endif;?>></li>
+		<?php endfor;?>
 	</ol>
 	
 	<!-- Wrapper for slides -->
