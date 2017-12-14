@@ -12,12 +12,11 @@
 		</div>
 	</div>
 </div>
-		<a href="<?php the_permalink(); ?>">
-		<?php if (has_post_thumbnail( $post->ID ) ): ?>
-		  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-            <div class="top-buffer space-below card-img single-post-img" style="background-image:url(<?php echo $image[0]?>);"></div>
-		<?php endif; ?>
-		</a>
+<?php if (has_post_thumbnail( $post->ID ) ): $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+<a href="<?php the_permalink(); ?>">
+	<div class="top-buffer space-below card-img single-post-img" style="background-image:url(<?php echo $image[0]?>);"></div>
+</a>
+<?php endif; ?>
 <div class="container  main-content top-buffer">
 	<div class="row">
 		<div class="col-md-12">
