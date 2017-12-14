@@ -8,7 +8,7 @@
 			<h2 class="cardo"><small><?php the_excerpt(); ?></small></h2>
 			<small  class="text-muted"><?php echo get_the_date( 'M d' ); ?></small>
 			 <span class="disc"></span>
-			<small  class="text-muted">17 min read</small>
+			<small  class="text-muted"><?php echo do_shortcode('[rt_reading_time]'); ?> min read</small>
 		</div>
 	</div>
 </div>
