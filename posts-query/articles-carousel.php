@@ -4,16 +4,19 @@
 		<li data-target="#myCarousel" data-slide-to="<?php _e( $i );?>" <?php if( $i == 0):?>class="active"<?php endif;?>></li>
 		<?php endfor;?>
 	</ol>
-	<?php 
-		$image = '';
-		if( has_post_thumbnail( $this->query->post->ID ) ){ 
-			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $this->query->post->ID ), 'single-post-thumbnail' );
-			$image = $image[0];
-		}
-	?>	
+	
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner">
 	<?php $index = 0;while( $this->query->have_posts() ) : $this->query->the_post();?>
+		
+		<?php 
+			$image = '';
+			if( has_post_thumbnail( $this->query->post->ID ) ){ 
+				$image = wp_get_attachment_image_src( get_post_thumbnail_id( $this->query->post->ID ), 'single-post-thumbnail' );
+				$image = $image[0];
+			}
+		?>	
+		
 		<div class="item <?php if ($index == 0) { echo ' active'; } ?>" >
 			<a href="<?php the_permalink(); ?>" class="overlay card-img" style="background-image:url('<?php echo $image; ?>')"></a>
 			<div class="carousel-caption col-md-5">

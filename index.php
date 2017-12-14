@@ -10,7 +10,7 @@
 		<?php if( $title ):?>
 		<div class="posts"><span class="white-bg text-uppercase red-text"><strong><?php _e( $title );?></strong></span></div>	
 		<?php endif;?>
-		<div id="index-container" data-target="index-container .row" data-url="">	
+		<div id="index-container" data-target="#index-container .row.cardo" data-url="">	
 		<?php 
 			$i = 1; 
 			while( have_posts() ) : the_post();
@@ -25,9 +25,8 @@
 				$i++;
 			endwhile;
 		?>
-		
 		</div>
-		<?php the_pq_pagination( $atts );?>
+		<button data-behaviour="ajax-loading" data-list="#index-container" class="load-more" type="button">Load More</button>	
 	</section>
 </div>
 <?php get_footer();?>
