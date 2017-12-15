@@ -1,6 +1,6 @@
 <?php get_header();?>
 <?php global $post;?>
-<div class="container space-below ">
+<div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<?php if(have_posts()):while ( have_posts() ) : the_post();?> 
@@ -13,9 +13,7 @@
 	</div>
 </div>
 <?php if (has_post_thumbnail( $post->ID ) ): $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-<a href="<?php the_permalink(); ?>">
-	<div class="top-buffer space-below card-img single-post-img" style="background-image:url(<?php echo $image[0]?>);"></div>
-</a>
+	<div class="space-above space-below card-img single-post-img" style="background-image:url(<?php echo $image[0]?>);"></div>
 <?php endif; ?>
 <div class="container  main-content top-buffer">
 	<div class="row">

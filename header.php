@@ -28,7 +28,7 @@
 						<a href=""><i class="fa fa-bell-o"></i></a> 
 					</span>
 					<a href=""><i class="fa fa-search"></i></a>
-					<input type="text" class="search-query" placeholder="Search" />
+					<input type="text" name="s" class="search-query" placeholder="Search" />
 					<span class="hidden">
 						<span class="separator text-muted">Next Story</span> 
 						<?php $next = get_the_title(get_adjacent_post(false,'',true));

@@ -312,6 +312,10 @@ box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
 }
 .navbar-form{
 	margin: 0;
+	box-shadow: none;
+}
+footer .navbar-form{
+	padding:0;
 }
 .media-body, .line-ht-in,.card-text{
 	line-height: initial;
@@ -374,6 +378,9 @@ blockquote{
 
 .space-below{
 	margin-bottom: 5em;
+}
+.space-above{
+	margin-top: 5em;
 }
 .line-ht{
 	line-height: 1.5px;
