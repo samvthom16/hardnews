@@ -71,7 +71,7 @@ $index = 0;?>
 						<div class="media">
 						  <div class="media-left">
 							<a href="#">
-							   <img class="media-object" src="<?php bloginfo('template_directory'); ?>/images/logo_small.png" alt="">
+							   <?php echo get_avatar(32); ?>
 							</a>
 						  </div>
 						  <div class="media-body small text-left">
@@ -114,7 +114,7 @@ $index = 0;?>
 						<div class="media">
 						  <div class="media-left">
 							<a href="#">
-							   <img class="media-object" src="<?php bloginfo('template_directory'); ?>/images/logo_small.png" alt="">
+							   <?php echo get_avatar(32); ?>
 							</a>
 						  </div>
 						  <div class="media-body small text-left">
@@ -157,7 +157,7 @@ $index = 0;?>
 						<div class="media">
 						  <div class="media-left">
 							<a href="#">
-							   <img class="media-object" src="<?php bloginfo('template_directory'); ?>/images/logo_small.png" alt="">
+							   <?php echo get_avatar(32); ?>
 							</a>
 						  </div>
 						  <div class="media-body small text-left">

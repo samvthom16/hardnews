@@ -39,7 +39,7 @@
 				<div class="media col-md-12">
 					<div class="media-left">
 						<a href="<?php bloginfo('url');?>">
-							<img class="media-object" src="<?php bloginfo('template_directory'); ?>/images/logo_small.png" alt="">
+							<?php echo get_avatar(32); ?>
 						</a>
 					</div>
 					<div class="media-body small text-left">

@@ -385,7 +385,10 @@ blockquote{
 .line-ht{
 	line-height: 1.5px;
 }
-
+.avatar{
+	height: 27px;
+	width: 27px;
+}
 
 
 @media (max-width: 1050px) {
