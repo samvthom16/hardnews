@@ -122,8 +122,7 @@ nav.navbar{
 }
 .navbar-collapse li a{	
     padding: 10px 5px 5px;
-    font-weight: bold;
-    font-size: small;
+	font:600 small 'Montserrat';
 }
 .navbar-brand.hidden{
 	padding:0;
@@ -131,8 +130,10 @@ nav.navbar{
 .navbar-brand.hidden img{
 	max-width:50px;
 }
+.main-content {
+	font-size: large;
+}
 .main-content img{
-/*	float: left;*/
 	margin: 20px 20px 20px 0;	
 }
 .separator:before{
@@ -192,8 +193,8 @@ nav.navbar{
 footer{
 	background: #e21f25;
 	color: #fff;
-	padding: 20px 0 15px;
-	font-size: large;
+	padding: 20px 0 15px;	
+    font: 500 large/2 'Montserrat';
 }
 
 .carousel-inner .item, .carousel-inner .card-img{
@@ -269,8 +270,8 @@ box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
 }
 
 .card-title {
-/*    font-size: 1.28571429em;*/
-    font-weight: 700;
+/*    font-size: 1.28571429em;
+    font-weight: 700;*/
     line-height: 1.2857em;
 }
 
@@ -389,6 +390,37 @@ blockquote{
 	height: 27px;
 	width: 27px;
 }
+.category .card-title>a,.category .card-text,.single-post a[href*="tag"],.home .card-text,.post-date{
+	font-weight: 500;
+	font-family: 'Montserrat';
+}
+.home a[rel*="author"],.home .card-title>a,.category a[rel*="author"]{
+	font-family: 'Cardo';
+	font-weight: bold;
+}
+.home .post-date,.post-date{
+	font-size:small;
+}
+.category a[rel*="author"],.single-post a[href*="tag"]{
+	font-size: medium;
+}
+.search-query,.tweet{
+	font: lighter medium/2 "Montserrat";
+}
+.category .card-text,.category a[rel*="author"]{
+	font-weight:normal;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1050px) {
@@ -414,7 +446,7 @@ blockquote{
 	  width: 100%;
 	  margin-top: 5px;
   }
-  .affix {
+  .affix {:
       top: 0;
       border-width: 0 0 1px;
   }
@@ -466,8 +498,10 @@ footer .social {
 .navbar-right {
     margin-right: -8px;
 }
+.carousel-indicators {
+    bottom: 0px;
+}	
 }
-	
 @media (max-width: 600px){
 	.affix .navbar-form{
 		display: none;

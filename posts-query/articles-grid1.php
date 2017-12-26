@@ -14,7 +14,7 @@
 		?>
 		<div class="pad-bot">
 				<h4 class="center"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
-				<strong class="media-heading red-text"><?php the_author_posts_link(); ?></strong>
+				<span class="media-heading red-text"><?php the_author_posts_link(); ?></span>
 		</div>
 		
 		<?php 

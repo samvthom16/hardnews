@@ -19,20 +19,20 @@
 		
 		<div class="item <?php if ($index == 0) { echo ' active'; } ?>" >
 			<a href="<?php the_permalink(); ?>" class="overlay card-img" style="background-image:url('<?php echo $image; ?>')"></a>
-			<div class="carousel-caption col-md-5">
-				<h2 class="post-title top-buffer cardo">
+			<div class="carousel-caption col-md-7">
+				<h2 class="card-title top-buffer">
 					<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 				</h2>
-				<p><?php the_excerpt(); ?></p>					
+				<p class="card-text"><?php the_excerpt(); ?></p>					
 				<div class="media">
 					<div class="media-left">
 						<a href="<?php bloginfo('url');?>">
-							<img class="media-object" src="<?php bloginfo('template_directory'); ?>/images/logo_small.png" alt="" />
+						   <?php echo get_avatar(32); ?>
 						</a>
 					</div>
-					<div class="media-body small text-left cardo">
-						<strong class="media-heading"><?php the_author_posts_link(); ?></strong>
-						<div><?php echo get_the_date( 'M d' ); ?></div>
+					<div class="media-body text-left">
+						<span class="media-heading"><?php the_author_posts_link(); ?></span>
+						<div class="post-date"><?php echo get_the_date( 'M d' ); ?></div>
 					</div>
 				</div>
 			</div>

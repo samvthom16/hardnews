@@ -1,7 +1,7 @@
 <div class="container">
 	<section class="col-md-12 clearfix white-text">
 		<div id="<?php _e( $atts['id'] );?>" data-target="<?php _e('#'.$atts['id'].' .row');?>" data-url="<?php _e( $atts['url'] );?>">	
-		<div class='row cardo'>
+		<div class='row'>
 		<?php 
 			$i = 0;
 			while ( $this->query->have_posts() ) : $this->query->the_post(); 
@@ -24,9 +24,9 @@
 							   <?php echo get_avatar(32); ?>
 							</a>
 						  </div>
-						  <div class="media-body small text-left">
-							<strong class="media-heading"><?php the_author_posts_link(); ?></strong>
-							<div><?php echo get_the_date( 'M d' ); ?></div>
+						  <div class="media-body text-left">
+							<span class="media-heading"><?php the_author_posts_link(); ?></span>
+							<div class="post-date"><?php echo get_the_date( 'M d' ); ?></div>
 						  </div>
 					</div>
                 </div>
@@ -43,9 +43,9 @@
 							   <?php echo get_avatar(32); ?>
 							</a>
 						  </div>
-						  <div class="media-body small text-left">
-							<strong class="media-heading"><?php the_author_posts_link(); ?></strong>
-							<div><?php echo get_the_date( 'M d' ); ?></div>
+						  <div class="media-body text-left">
+							<span class="media-heading"><?php the_author_posts_link(); ?></span>
+							<div class="post-date"><?php echo get_the_date( 'M d' ); ?></div>
 						  </div>
 						</div>
 					</div>

@@ -24,9 +24,9 @@
 							<?php echo get_avatar(32); ?>
 						</a>
 					</div>
-					<div class="media-body small text-left">
-						<strong class="media-heading"><?php the_author_posts_link(); ?></strong>
-						<div><?php echo get_the_date( 'M d' ); ?></div>
+					<div class="media-body text-left">
+						<span class="media-heading"><?php the_author_posts_link(); ?></span>
+						<div class="post-date"><?php echo get_the_date( 'M d' ); ?></div>
 					</div>
 				</div>
 			</div>

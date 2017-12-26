@@ -2,7 +2,7 @@
 	<section class="col-md-12 clearfix white-text">
 		<div class="posts"><span class="white-bg text-uppercase red-text"><strong><?php _e($atts['title']);?></strong></span></div>	
 		<div id="<?php _e( $atts['id'] );?>" data-target="<?php _e('#'.$atts['id'].' .row');?>" data-url="<?php _e( $atts['url'] );?>">	
-		<div class='row cardo'>
+		<div class='row '>
 		<?php 
 			$i = 0;
 			while ( $this->query->have_posts() ) : $this->query->the_post(); 

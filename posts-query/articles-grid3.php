@@ -8,7 +8,7 @@
 			$i = 1; 
 			while ( $this->query->have_posts() ) : $this->query->the_post(); 
 				
-				if( $i % 3 == 1){ echo "<div class='row cardo'>";}
+				if( $i % 3 == 1){ echo "<div class='row '>";}
 				
 				get_template_part('partials/grid', '3');
 				
