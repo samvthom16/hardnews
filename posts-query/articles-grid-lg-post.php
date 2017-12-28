@@ -13,7 +13,7 @@
 		?>
 		
 		<?php if(  $this->query->current_post == 0 && !is_paged() ) : ?>
-		<div class="col-md-8 white-text bottom-buffer">
+		<div class="col-md-8 no-pad-left  white-text bottom-buffer">
 			<a href="<?php the_permalink(); ?>" class="overlay single-post-img card-img" style="background-image: url(<?php echo $image?>);"></a>
 			<div class="card col-md-10 carousel-caption">
 				<h3 class="card-title "><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
