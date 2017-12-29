@@ -54,9 +54,6 @@ a:hover,a:focus{
     padding-right:0;
     padding-left:0;
 }
-.no-pad-left{
-	padding-left: 0;
-}
 .top-buffer ,blockquote, .border.row-eq-height > [class*='col-']{ margin-top: 2em !important;}
 .bottom-buffer , blockquote{ margin-bottom: 2em !important; }
 
@@ -488,6 +485,12 @@ footer ul{
 }
 
 aside{display:none;}
+}
+
+@media (min-width: 992px){
+.category .no-pad-left{
+	padding-left: 0;
+}
 }
 @media (min-width: 768px)
 {
