@@ -37,7 +37,7 @@
 				<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa fa-twitter fa-outline blue-text"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 			<div class="col-md-offset-1 col-md-5 bottom-buffer no-gutter tweet">
-				<?php the_excerpt(); ?>				
+				<?php the_title_attribute(); ?>		
 				<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa fa-twitter fa-outline blue-text"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</div>
