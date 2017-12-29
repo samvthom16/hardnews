@@ -3,13 +3,6 @@
 			$i = 0;
 			while ( $this->query->have_posts() ) : $this->query->the_post(); 
 				$postid = $this->query->post->ID;
-				$image = '';
-				if( has_post_thumbnail( $postid ) ){
-					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $postid ), 'single-post-thumbnail' ); 				
-					$image = $image[0];
-				} 
-				
-				
 				
 		?>
 		<div class="pad-bot">

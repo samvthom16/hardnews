@@ -7,7 +7,7 @@
 				$postid = $this->query->post->ID;
 				$image = '';
 				if( has_post_thumbnail( $postid ) ){
-					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $postid ), 'single-post-thumbnail' ); 				
+					$image = wp_get_attachment_image_src( get_post_thumbnail_id( $postid ), 'medium_large' ); 				
 					$image = $image[0];
 				} 
 				

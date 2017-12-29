@@ -16,7 +16,7 @@ $('.main-content img').each(function() {
 		$(this).wrap( "<div class='text-center col-md-12 top-buffer bottom-buffer'></div>" );
 		
 	}
-	else
+	else 
     $(this).css('float','left');
 });
 });

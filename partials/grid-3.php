@@ -2,7 +2,7 @@
 	global $post_id;
 	$image = '';
 	if( has_post_thumbnail( $post_id ) ){
-		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'single-post-thumbnail' ); 				
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'medium_large' ); 				
 		$image = $image[0];
 	} 
 ?>
