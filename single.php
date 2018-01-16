@@ -54,7 +54,7 @@
 				</div>
 			</li>
 			<li>
-				<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false"><i class="fa fa-twitter fa-outline red-text-outline"></i></a>
+				<a href="https://twitter.com/intent/tweet?text=<?php the_title(); ?>"><i class="fa fa-twitter fa-outline red-text-outline"></i></a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</li>
 			<li><a href="whatsapp://send?text=<?php echo urlencode(get_permalink($post->ID)); ?>" data-action="share/whatsapp/share"><i class="fa fa-whatsapp"></i></a></li>
