@@ -12,12 +12,17 @@ $(affixElement).affix({
 $('.main-content img').each(function() {
 	$(this).css('max-width','100%');
     if($(this).width()>500 && $(this).height()<$(this).width()){
-		$(this).css('float','none');
+		$(this).css({'float':'none',
+    'width': 'auto',
+    'height': 'auto';});
 		$(this).wrap( "<div class='text-center col-md-12 top-buffer bottom-buffer'></div>" );
 		
 	}
 	else 
     $(this).css('float','left');
+});
+$('.main-content .wp-caption').each(function() {
+	$(this).css('max-width','none');
 });
 });
 

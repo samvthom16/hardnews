@@ -180,14 +180,11 @@ nav.navbar{
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #b3b3b3;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
-}
 :-ms-input-placeholder { /* IE 10+ */
-  color: #fff;
+  color: #b3b3b3;
 }
-:-moz-placeholder { /* Firefox 18- */
-  color: #fff;
+input::-moz-placeholder{
+  color: #b3b3b3;
 }
 footer{
 	background: #e21f25;
@@ -336,6 +333,7 @@ blockquote,.cardo{
 blockquote{
 	border-color: #e21f25;
 	font-style: italic;
+	clear: both;
 }
 .fixed-socials{
    left: 0;
