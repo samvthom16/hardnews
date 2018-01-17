@@ -11,7 +11,7 @@ $(affixElement).affix({
 
 $('.main-content img').each(function() {
 	$(this).css('max-width','100%');
-    if($(this).width()>500 && $(this).height()<$(this).width() || $(this).width()>999){
+    if($(this).width()>499 && $(this).height()<$(this).width() || $(this).width()>999){
 		$(this).css({'float':'none',
 					 'height': '100%'});
 		$(this).wrap( "<div class='text-center col-md-12 top-buffer bottom-buffer'></div>" );
@@ -21,7 +21,7 @@ $('.main-content img').each(function() {
     $(this).css('float','left');
 });
 $('.main-content .wp-caption').each(function() {
-	$(this).css('max-width','none');
+	$(this).css({'max-width':'none'});
 });
 });
 
