@@ -11,10 +11,9 @@ $(affixElement).affix({
 
 $('.main-content img').each(function() {
 	$(this).css('max-width','100%');
-    if($(this).width()>500 && $(this).height()<$(this).width()){
+    if($(this).width()>500 && $(this).height()<$(this).width() || $(this).width()>999){
 		$(this).css({'float':'none',
-    'width': 'auto',
-    'height': 'auto';});
+					 'height': '100%'});
 		$(this).wrap( "<div class='text-center col-md-12 top-buffer bottom-buffer'></div>" );
 		
 	}
