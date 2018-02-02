@@ -25,7 +25,6 @@
 						<a href="https://www.facebook.com/HNFP.IN/"><i class="fa fa-facebook fa-outline"></i></a>
 						<a href="https://twitter.com/hnfp_in"><i class="fa fa-twitter fa-outline"></i></a>
 						<a href="whatsapp://send?text=<?php bloginfo('url');?>" data-action="share/whatsapp/share"><i class="fa fa-whatsapp"></i></a> 
-						<a href=""><i class="fa fa-bell-o"></i></a> 
 					</span>
 					<a href=""><i class="fa fa-search"></i></a>
 					<input type="text" name="s" class="search-query" placeholder="Search" />

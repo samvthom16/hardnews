@@ -17,8 +17,9 @@ $('.main-content img').each(function() {
 		$(this).wrap( "<div class='text-center col-md-12 top-buffer bottom-buffer'></div>" );
 		
 	}
-	else 
-    $(this).css('float','left');
+	else{
+		$(this).css('float','left');
+	}
 });
 $('.main-content .wp-caption').each(function() {
 	$(this).css({'max-width':'none'});
