@@ -58,7 +58,6 @@
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</li>
 			<li><a href="whatsapp://send?text=<?php echo urlencode(get_permalink($post->ID)); ?>" data-action="share/whatsapp/share"><i class="fa fa-whatsapp"></i></a></li>
-			<li><a href="#"><i class="fa fa-bell-o"></i></a></li>
 		</ul>
 	</aside>
 <?php get_footer();?>
