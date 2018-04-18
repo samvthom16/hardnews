@@ -1,4 +1,4 @@
-<?php /* Template Name: CustomPage */ ?>
+<?php /* Template Name: StaticPage */ ?>
 <?php get_header();?>
 <?php while( have_posts() ) : the_post();?>
 	<div class="container space-above">
